@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<main class="main">
+  <div class="container">
+    <div class="izquierda">
+      <div class="headingIzquierda">
+        <h2>Mortgage Calculator</h2>
+        <button class="btn btnClear" id="clear">Clear All</button>
+      </div>
+      <form action="submit" id="form" class="form" name="form">
+        <div class="mortgageAmountDiv">
+          <label for="mortgageAmount">Mortgage Amount</label>
+          <div class="divMortgageInputs">
+            <span>$</span>
+            <input type="number" id="mortgageAmount" class="input" name="mortgageAmount">
+          </div>
+        </div>
+        <div class="termInterestDiv">
+          <div class="termInputDiv ">
+            <label for="term">Mortgage Term</label>
+            <div class="termDiv divMortgageInputs">
+              <input type="number" name="term" id="term" class="input">
+              <span>years</span>
+            </div>
+          </div>
+          <div class="interestInputDiv">
+            <label for="interest">Interest Rate</label>
+            <div class="interestDiv divMortgageInputs">
+              <input type="number" name="interest" id="interest" class="input" step="0.01" min="0">
+              <span>%</span>
+            </div>
+          </div>
+        </div>
+        <div class="mortgageTypeDiv">
+          <div class="radioDiv">
+            <input type="radio" name="radio" id="repayment" class="input" checked value="repayment">
+            <label for="repayment">
+              <button class="btn btnRepayment" type="button">
+                Repayment
+              </button>
+            </label>
+          </div>
+          <div class="radioDiv">
+            <input type="radio" name="radio" id="interestOnly" class="input" value="interestOnly">
+            <label for="interestOnly">
+              <button class="btn btnInterest" type="button" > 
+                Interest Only
+              </button>
+            </label>
+          </div>
+        </div>
+        <button class="btn btnSubmit" id="btnSubmit" type="submit"><img src="./assets/images/icon-calculator.svg" alt="icono calculadora">Calculate Repayment</button>
+      </form>
+    </div>
+    <div class="derecha">
+      <div class="headingDerecha notVisible" id="headingDerecha">
+        <h2>Your Results</h2>
+        <p>Your results are shown below based on the informartion you provided. To adjust the results, edit the form and click "calculate repayment" again.</p>
+        <div class="card ">
+          <h3>You monthly repayments</h3>
+          <h3 class="repaymentAmount" id="monthlyRepaymentAmount"></h3>
+          <hr>
+          <h4>Total you'll repay over the term</h4>
+          <h5 id="totalRepaymentAmount"></h5>
+        </div>
+      </div>
+      <div class="headingEmpty" id="headingEmpty">
+        <img src="./assets/images/illustration-empty.svg" alt="">
+        <h2>Results shown here</h2>
+        <p>Complete the form and click "calculate payments" to see what your monthly repayments would be.</p>
+      </div>
+    </div>
+  </div>
+</main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Tomas Garcia</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

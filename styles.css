@@ -1,0 +1,293 @@
+
+@import url('/assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+body{
+    background-color:hsl(60, 31%, 56%) ;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 60%;
+    height: 70%;
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+.izquierda{
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    width: 50%;
+    height: 100%;
+
+}
+.derecha{
+    color: rgb(221, 220, 220);
+    background-color:#133040;
+    border-radius: 15px;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 50px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 70px;
+}
+
+.headingDerecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+}
+
+.headingEmpty{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.headingEmpty p{
+    text-align: center;
+}
+
+.headingIzquierda{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mortgageAmountDiv{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mortgageAmountDiv input{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.divMortgageInputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+.mortgageAmountDiv span{
+    padding: 14px;
+    background-color:rgb(129, 175, 194);
+}
+.termInterestDiv{
+    display: flex;
+
+}
+.mortgageTypeDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.mortgageTypeDiv input{
+    width: 15px;
+}
+.btn{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.btnInterest{
+    pointer-events: none;
+    border: none;
+}
+.btnRepayment{
+    pointer-events: none;
+    border: none;
+}
+.btnSubmit{
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 30px;
+    border: none;
+}
+
+.input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+}
+
+input:focus{
+    outline: none;
+}
+.radioDiv{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+.radioDiv label{
+    width: 100%;
+    cursor: pointer;
+}
+
+.termInterestDiv{
+    height: 100px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.termInputDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 15px;
+
+}
+.interestInputDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    gap: 15px;
+
+}
+
+
+.interestDiv{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.termDiv{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.termDiv span{
+    padding: 14px;
+    background-color: rgb(129, 175, 194);
+}
+.interestDiv span{
+    padding: 14px;
+    background-color: rgb(129, 175, 194);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    background-color: #040f14;
+    border-top: 3px solid rgb(158, 218, 62);
+    border-radius: 5px;
+    padding: 25px;
+}
+.card h5{
+    font-size: 25px;
+}
+
+.repaymentAmount{
+    font-size: 60px;
+    color: rgb(158, 218, 62);
+}
+
+.notVisible{
+    display: none;
+}
+
+/* .invalido:has(div){
+    border: 1px solid red;
+    
+} */
+.invalido span{
+    background-color:hsl(4, 69%, 50%);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width :1000px){
+    .main{
+        padding-top: 50px;
+        justify-content: center;
+        align-items: start;
+    }
+    .container{
+        flex-direction: column;
+        
+    }
+    .izquierda{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .derecha{
+        width: 100%;
+        border-radius: 0px;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        height: 600px;
+    }
+    .card{
+        height: 100%;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+    }
+    .headingIzquierda{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .btnClear{
+        width: 25%;
+    }
+}

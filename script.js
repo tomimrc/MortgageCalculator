@@ -39,6 +39,9 @@ const enviar = (e) => {
                 obj[key].parentNode.classList.add("invalido");
             }}
 
+            headingEmpty.classList.remove("notVisible")
+        headingFilled.classList.add("notVisible")
+
     }else{
         numberOfPayments = term * 12
         monthlyInterestRate = (interest / 100) /12
